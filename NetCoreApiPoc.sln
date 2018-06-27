@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreApiPoc", "NetCoreApiPoc\NetCoreApiPoc.csproj", "{7246D333-C619-47C7-9FA4-BFED656C5348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreApiPocTest", "NetCoreApiPocTest\NetCoreApiPocTest.csproj", "{4DFC6BBF-AFB8-4838-A3BE-2E001D1EB6E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7246D333-C619-47C7-9FA4-BFED656C5348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7246D333-C619-47C7-9FA4-BFED656C5348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7246D333-C619-47C7-9FA4-BFED656C5348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7246D333-C619-47C7-9FA4-BFED656C5348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFC6BBF-AFB8-4838-A3BE-2E001D1EB6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFC6BBF-AFB8-4838-A3BE-2E001D1EB6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFC6BBF-AFB8-4838-A3BE-2E001D1EB6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFC6BBF-AFB8-4838-A3BE-2E001D1EB6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
