@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    hostname: "rabbitmq"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - ./rabbitmq-isolated.conf:/etc/rabbitmq/rabbitmq.config
+  web:
+    container_name: NetCoreApiPoc
+    hostname: "app"
+    build: ./NetCoreApiPoc
+    ports:
+      - "80:80"
+    restart: always
+    depends_on:
+      - "rabbitmq"
+    links:
+      - "rabbitmq"
+  consumer:
+    container_name: RabbitConsumerPoc
+    build: ./RabbitConsumerPoc
+    restart: always
+    depends_on:
+      - "rabbitmq"
+    links:
+      - "rabbitmq"

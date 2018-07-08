@@ -9,8 +9,8 @@ namespace NetCoreApiPocTest
         public void TestController()
         {
             var controller = new HelloWorldController();
-            var response = controller.Get();
-            Assert.Equal(response, "OK");
+            var response = controller.Get("hola, amigo");
+            Assert.Equal(response, "Set message: hola, amigo");
         }
     }
 }
